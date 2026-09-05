@@ -1,18 +1,18 @@
-# GGi-gik website v1
+# GGi-gik website v2
 
-시안의 다크 네이비/시안 톤, 상단 네비게이션, Hero, 문제, 솔루션, API, 적용 분야, 문의 구조를 실제 반응형 웹으로 구현한 초안입니다.
+반영 사항
+- Hero 배경 이미지를 실제 제공 이미지로 교체
+- 헤더 로고를 실제 끼긱 로고로 교체
+- 헤더 브랜드명을 `GGi-gik` 크게, `끼긱` 작게 수정
+- 상단 eyebrow를 `better stops for a smarter tomorrow`로 교체
+- Hero 오른쪽 설명 문구 삭제
+- `도착지` 삭제 → `최적 정차구역 추천 API·SDK 서비스`
+- 소개 문구 줄바꿈 및 `개발합니다` → `제공합니다`
+- 문제 섹션 카피 변경
+- 4개 카드 줄바꿈 다듬기
+- 솔루션 섹션에 연동 이미지 반영
 
-## 배포 구조 권장
-- `ggigik.com` / `www.ggigik.com` → 이 정적 홈페이지
-- 기존 Render API MVP → 그대로 유지
-- 추후 `api.ggigik.com` → 기존 Render 서비스에 연결
-- `contact@ggigik.com` → Hiworks 유지
-
-## 파일
-- `index.html`
-- `assets/styles.css`
-- `assets/app.js`
-
-## 중요한 점
-현재 홈페이지 문구는 실제 개발상태에 맞춰 `Prototype API v0.2`로 표현했습니다.
-실제 로고 PNG/SVG를 제공하면 상단/푸터의 임시 CSS 로고 마크를 공식 로고로 교체하면 됩니다.
+배포 구조
+- ggigik.com / www.ggigik.com → 이 정적 홈페이지
+- api.ggigik.com → 기존 Render API MVP
+- contact@ggigik.com → Hiworks 유지
