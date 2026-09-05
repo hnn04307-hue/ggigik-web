@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="끼긱(GGi-gik) — 도착지 최적 정차구역 추천 API·SDK 서비스" />
+  <meta name="theme-color" content="#061b2b" />
+  <title>끼긱 GGi-gik | 도착지 최적 정차구역 추천 API·SDK</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="끼긱 홈">
+        <span class="brand-mark" aria-hidden="true"><span>∞</span></span>
+        <span class="brand-copy"><b>끼긱</b><small>GGi-gik</small></span>
+      </a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#problem">문제</a>
+        <a href="#solution">솔루션</a>
+        <a href="#api">API</a>
+        <a href="#usecase">적용 분야</a>
+        <a href="#contact">문의하기</a>
+      </nav>
+      <a class="btn btn-outline top-cta" href="mailto:contact@ggigik.com">PoC / 제휴 문의 <span>→</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="circuit left-circuit" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <div class="eyebrow">B2B MOBILITY DATA · API-FIRST</div>
+          <h1>차가 잠깐 서는 자리를,<br><em>똑똑하게 안내합니다.</em></h1>
+          <h2>도착지 최적 정차구역 추천 API·SDK 서비스</h2>
+          <p>끼긱은 목적지 전면부의 정차 후보를 비교해, 차량 유형과 현장 조건에 맞는 정차 위치를 추천하는 B2B 모빌리티 API·SDK를 개발합니다.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#solution">서비스 알아보기 <span>→</span></a>
+            <a class="btn btn-outline" href="mailto:contact@ggigik.com">PoC / 제휴 문의</a>
+          </div>
+          <div class="tagline">Smart Connectivity · Better Stops</div>
+        </div>
+
+        <div class="hero-visual" aria-label="정차 후보 A, B, C를 비교하는 끼긱 서비스 개념도">
+          <div class="city"></div>
+          <div class="road-lines"></div>
+          <div class="car">
+            <div class="rear-window"></div>
+            <div class="tail-light tl"></div>
+            <div class="tail-light tr"></div>
+          </div>
+          <div class="pin pin-a"><i></i><strong>A</strong><span>추천 정차구역</span></div>
+          <div class="pin pin-b"><strong>B</strong><span>대체 구역</span></div>
+          <div class="pin pin-c"><strong>C</strong><span>대체 구역</span></div>
+          <div class="visual-note"><b>더 나은 이동의 시작</b><br>Smart Stops<br>for a Smarter Tomorrow</div>
+        </div>
+      </section>
+
+      <section id="problem" class="section section-problem">
+        <div class="section-title">
+          <span class="section-no">01</span>
+          <h2>문제</h2>
+          <p>아직, 목적지에 다 와도 ‘어디에 세워야 할지’ 모릅니다.</p>
+          <a href="#solution">더 나은 정차, 더 안전한 도시로 →</a>
+        </div>
+        <div class="cards four">
+          <article class="card">
+            <div class="icon">◎</div><h3>혼잡</h3>
+            <p>목적지 주변에 차량이 몰리면서 병목과 승하차 혼선이 발생합니다.</p>
+          </article>
+          <article class="card">
+            <div class="icon">⇄</div><h3>정차 판단 부재</h3>
+            <p>내비게이션은 도착까지 안내하지만 실제 정차 위치 선택은 운전자에게 남습니다.</p>
+          </article>
+          <article class="card">
+            <div class="icon">△</div><h3>안전 리스크</h3>
+            <p>횡단보도, 좁은 도로, 시야 확보 등 현장 조건에 따라 정차 적합도가 달라집니다.</p>
+          </article>
+          <article class="card">
+            <div class="icon">▤</div><h3>데이터 미축적</h3>
+            <p>정차 후보·위험조건·실제 이용 결과가 구조화되지 않아 반복적인 판단이 필요합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="solution" class="section solution-band">
+        <div class="section-title left">
+          <span class="section-no">02</span>
+          <h2>솔루션</h2>
+          <p>데이터로 찾는, 더 적합한 정차 위치.</p>
+        </div>
+        <div class="solution-grid">
+          <div class="solution-copy">
+            <ul>
+              <li><span>01</span> 목적지 전면부 정차 후보 데이터 구조화</li>
+              <li><span>02</span> 안전·접근성·현장 조건 기반 위험도 계산</li>
+              <li><span>03</span> 추천 정차구역과 대체구역 반환</li>
+            </ul>
+            <div class="prototype-badge">현재 단계 · Rule-based Prototype API v0.2</div>
+          </div>
+          <div class="map-demo" aria-label="정차 후보 추천 개념">
+            <div class="destination">목적지</div>
+            <div class="map-road r1"></div><div class="map-road r2"></div>
+            <div class="mini-car"></div>
+            <div class="zone za"><b>A</b><span>추천 정차구역</span></div>
+            <div class="zone zb"><b>B</b><span>대체 구역</span></div>
+            <div class="zone zc"><b>C</b><span>대체 구역</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="api" class="section api-section">
+        <div class="section-title left">
+          <span class="section-no">03</span>
+          <h2>API</h2>
+          <p>간단한 연동으로, 스마트한 정차 경험을.</p>
+        </div>
+
+        <div class="api-grid">
+          <div class="api-copy">
+            <p>끼긱의 API MVP는 목적지와 차량 조건을 입력받아 후보 정차구역의 위험도를 계산하고, 가장 적합한 후보를 반환하는 구조로 검증 중입니다.</p>
+            <div class="tabs" role="tablist">
+              <button class="tab active" data-target="req">요청 예시</button>
+              <button class="tab" data-target="res">응답 예시</button>
+            </div>
+            <pre id="req" class="code active"><code>POST /recommend
+{
+  "destination_id": "D001",
+  "vehicle_type": "passenger"
+}</code></pre>
+            <pre id="res" class="code"><code>{
+  "destination_id": "D001",
+  "recommended_candidate_id": "C001",
+  "risk_score": 0,
+  "walking_distance_m": 18,
+  "reason": [
+    "Lowest calculated risk score among available candidates"
+  ]
+}</code></pre>
+          </div>
+
+          <div class="api-schema">
+            <div><span>⌖</span><b>목적지</b><small>destination_id</small></div>
+            <div><span>▱</span><b>차량 유형</b><small>vehicle_type</small></div>
+            <div><span>◎</span><b>추천 정차구역</b><small>candidate_id</small></div>
+            <div><span>↔</span><b>보행거리</b><small>walking_distance_m</small></div>
+            <div><span>△</span><b>위험도</b><small>risk_score</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="usecase" class="section section-usecase">
+        <div class="section-title">
+          <span class="section-no">04</span>
+          <h2>적용 분야</h2>
+          <p>더 스마트한 모빌리티 생태계를 함께 만들어갑니다.</p>
+          <a href="#contact">다양한 파트너와, 더 큰 가능성으로 →</a>
+        </div>
+        <div class="cards four">
+          <article class="card use"><div class="icon">⌖</div><h3>내비 · 지도</h3><p>도착 후 실제 정차 위치까지 이어지는 라스트 100m 정보 제공</p></article>
+          <article class="card use"><div class="icon">▣</div><h3>모빌리티 플랫폼</h3><p>택시·호출·물류 등 승하차/픽업 지점 추천</p></article>
+          <article class="card use"><div class="icon">P</div><h3>주차관제</h3><p>시설 전면부 정차 후보와 운영 정책을 연결하는 데이터 레이어</p></article>
+          <article class="card use"><div class="icon">▱</div><h3>차량 OEM / IVI</h3><p>차량 화면에서 활용 가능한 정차 추천 API·SDK 확장</p></article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-strip">
+        <div>
+          <div class="eyebrow">PARTNERSHIP · POC · DATA COLLABORATION</div>
+          <h2>목적지 도착 이후의 정차 경험을 함께 설계합니다.</h2>
+        </div>
+        <a class="btn btn-primary" href="mailto:contact@ggigik.com">contact@ggigik.com <span>→</span></a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand footer-brand" href="#top">
+        <span class="brand-mark small" aria-hidden="true"><span>∞</span></span>
+        <span class="brand-copy"><b>끼긱</b><small>GGi-gik</small></span>
+      </a>
+      <div class="footer-links">
+        <a href="#problem">회사소개</a>
+        <a href="#api">API</a>
+        <a href="#contact">문의</a>
+      </div>
+      <div class="footer-contact">✉ contact@ggigik.com</div>
+      <div class="copyright">© 2026 GGi-gik. All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
