@@ -42,7 +42,11 @@
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="최적 정차구역 추천 개념도">
+        <div class="hero-visual" aria-label="실제 도로와 정차구역 추천 흐름 영상">
+          <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-poster.jpg">
+            <source src="assets/video/hero-stopping.mp4" type="video/mp4" />
+          </video>
+          <div class="video-shade"></div>
           <div class="zone-wrap zone-a">
             <div class="zone-label big">A</div>
             <div class="zone-text">추천 정차구역</div>
@@ -104,7 +108,13 @@
             <div class="prototype-badge">현재 단계 · Rule-based Prototype API v0.2</div>
           </div>
           <div class="solution-visual">
-            <img src="assets/solution-integrations.png" alt="모바일 내비 연동 및 차량 IVI 연동 예시" />
+            <div class="tech-video-card">
+              <video class="solution-video" autoplay muted loop playsinline preload="metadata" poster="assets/video/solution-poster.jpg">
+                <source src="assets/video/solution-tech.mp4" type="video/mp4" />
+              </video>
+              <div class="video-caption">Mobility Data · Recommendation · Connected Experience</div>
+            </div>
+            <img class="integration-strip" src="assets/solution-integrations.png" alt="모바일 내비 연동 및 차량 IVI 연동 예시" />
           </div>
         </div>
       </section>

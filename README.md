@@ -1,18 +1,13 @@
-# GGi-gik website v2
+# GGi-gik website v4 — full-width + video
 
-반영 사항
-- Hero 배경 이미지를 실제 제공 이미지로 교체
-- 헤더 로고를 실제 끼긱 로고로 교체
-- 헤더 브랜드명을 `GGi-gik` 크게, `끼긱` 작게 수정
-- 상단 eyebrow를 `better stops for a smarter tomorrow`로 교체
-- Hero 오른쪽 설명 문구 삭제
-- `도착지` 삭제 → `최적 정차구역 추천 API·SDK 서비스`
-- 소개 문구 줄바꿈 및 `개발합니다` → `제공합니다`
-- 문제 섹션 카피 변경
-- 4개 카드 줄바꿈 다듬기
-- 솔루션 섹션에 연동 이미지 반영
+## 이번 버전 변경
+- 브라우저 전체 가로폭 사용 유지
+- 실제 도로/정차구역 영상: Hero 오른쪽 영상으로 자동재생·무음·반복
+- 스마트 모빌리티/관제 영상: Solution 기술 영상으로 자동재생·무음·반복
+- 기존 모바일 내비/차량 IVI 연동 이미지도 Solution 하단에 유지
+- 영상은 웹용 H.264 MP4로 경량화하고 `faststart` 적용
+- poster 이미지 포함으로 첫 로딩 시 빈 화면 최소화
+- 기존 API MVP 코드는 변경하지 않음
 
-배포 구조
-- ggigik.com / www.ggigik.com → 이 정적 홈페이지
-- api.ggigik.com → 기존 Render API MVP
-- contact@ggigik.com → Hiworks 유지
+## 업로드 대상
+`ggigik-web` 저장소 루트에 이 폴더의 내용 전체를 덮어쓰기하면 됩니다.
