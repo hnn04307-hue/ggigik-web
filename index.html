@@ -12,188 +12,151 @@
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <div class="site-shell">
-    <header class="topbar">
-      <a class="brand" href="#top" aria-label="GGi-gik 홈">
-        <img src="assets/logo.png" alt="GGi-gik 로고" class="brand-logo" />
-        <span class="brand-copy"><b>GGi-gik</b><small>끼긱</small></span>
-      </a>
-      <nav class="nav" aria-label="주요 메뉴">
-        <a href="#problem">문제</a>
-        <a href="#solution">솔루션</a>
-        <a href="#api">API</a>
-        <a href="#usecase">적용 분야</a>
-        <a href="#contact">문의하기</a>
-      </nav>
-      <a class="btn btn-outline top-cta" href="mailto:contact@ggigik.com">PoC / 제휴 문의 <span>→</span></a>
-    </header>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="GGi-gik 홈">
+      <span class="brand-mark">G</span>
+      <span class="brand-copy"><b>GGi-gik</b><small>끼긱</small></span>
+    </a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#problem">문제</a>
+      <a href="#service">서비스</a>
+      <a href="#usecase">적용 분야</a>
+      <a href="#partnership">사업제휴</a>
+      <a href="#contact">문의하기</a>
+    </nav>
+    <a class="btn btn-outline top-cta" href="mailto:contact@ggigik.com">PoC / 제휴 문의</a>
+  </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-overlay"></div>
+  <main id="top">
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+        <source src="assets/video/hero-intro.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-dim"></div>
+      <div class="hero-grid">
         <div class="hero-copy">
           <div class="eyebrow">better stops for a smarter tomorrow</div>
           <h1>차가 잠깐 서는 자리를,<br><em>똑똑하게 안내합니다.</em></h1>
           <h2>최적 정차구역 추천 API·SDK 서비스</h2>
-          <p>끼긱은 목적지 전면부의 정차 후보를 비교해,<br><span>차량 유형과 현장 조건에 맞는 정차 위치를 추천하는 B2B 모빌리티 API·SDK를 제공합니다.</span></p>
+          <p>끼긱은 목적지 전면부의 정차 후보를 비교해,<br>차량 유형과 현장 조건에 맞는 정차 위치를 추천하는 B2B 모빌리티 API·SDK를 제공합니다.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#solution">서비스 알아보기 <span>→</span></a>
-            <a class="btn btn-outline" href="mailto:contact@ggigik.com">PoC / 제휴 문의</a>
+            <a class="btn btn-primary" href="#service">서비스 알아보기</a>
+            <a class="btn btn-outline" href="#contact">문의하기</a>
           </div>
         </div>
+        <div class="hero-side-card">
+          <div class="mini-zone-card">
+            <div class="zone zone-a"><b>A</b><span>추천 정차구역</span></div>
+            <div class="zone"><b>B</b><span>대체 구역</span></div>
+            <div class="zone"><b>C</b><span>대체 구역</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="hero-visual" aria-label="실제 도로와 정차구역 추천 흐름 영상">
-          <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-poster.jpg">
-            <source src="assets/video/hero-stopping.mp4" type="video/mp4" />
-          </video>
-          <div class="video-shade"></div>
-          <div class="zone-wrap zone-a">
-            <div class="zone-label big">A</div>
-            <div class="zone-text">추천 정차구역</div>
-          </div>
-          <div class="zone-wrap zone-b">
-            <div class="zone-label">B</div>
-            <div class="zone-text">대체 구역</div>
-          </div>
-          <div class="zone-wrap zone-c">
-            <div class="zone-label">C</div>
-            <div class="zone-text">대체 구역</div>
-          </div>
-        </div>
-      </section>
+    <section class="section business-card-band" id="intro-card">
+      <div class="card-copy">
+        <div class="section-kicker">OFFICIAL CONTACT CARD</div>
+        <h3>브랜드와 연락처를 한 번에 보여주는 공식 명함</h3>
+        <p>기업 담당자, 투자사, 협회 관계자가 홈페이지에서 바로 신뢰할 수 있도록 명함 이미지는 상단 소개 바로 아래에 배치하는 것이 가장 자연스럽습니다.</p>
+        <ul>
+          <li>브랜드명 · 로고 인지 강화</li>
+          <li>대표명 · 이메일 · 역할 한눈에 확인</li>
+          <li>PoC 문의와 연결되는 신뢰 영역</li>
+        </ul>
+      </div>
+      <div class="card-visual">
+        <img src="assets/business-card.png" alt="GGi-gik 명함 이미지" />
+      </div>
+    </section>
 
-      <section id="problem" class="section">
-        <div class="section-head">
-          <div class="left-group"><span class="section-no">01</span><h3>문제</h3></div>
-          <p>3분 내외의 방문, 목적지에 다 와도 '어디에 세워야 할지' 모릅니다.</p>
-          <a href="#solution">더 나은 정차, 더 안전한 도시로 →</a>
-        </div>
-        <div class="cards four">
-          <article class="card">
-            <div class="icon">◎</div>
-            <h4>혼잡</h4>
-            <p>목적지 주변에 차량이 몰리면<br>승하차와 정차가 동시에 혼선됩니다.</p>
-          </article>
-          <article class="card">
-            <div class="icon">⇄</div>
-            <h4>정차 판단 부재</h4>
-            <p>내비게이션은 도착까지 안내하지만,<br>실제 정차 위치는 운전자 판단에 남습니다.</p>
-          </article>
-          <article class="card">
-            <div class="icon">△</div>
-            <h4>안전 리스크</h4>
-            <p>횡단보도, 좁은 도로, 시야 조건에 따라<br>정차 위험도는 크게 달라집니다.</p>
-          </article>
-          <article class="card">
-            <div class="icon">▤</div>
-            <h4>데이터 미축적</h4>
-            <p>정차 후보와 실제 이용 결과가<br>구조화되지 않아 같은 판단이 반복됩니다.</p>
-          </article>
-        </div>
-      </section>
+    <section class="section" id="problem">
+      <div class="section-head">
+        <span class="section-no">01</span>
+        <h3>끼긱이 해결하는 문제</h3>
+      </div>
+      <p class="section-desc">3분 내외의 방문, 목적지에 다 와도 ‘어디에 세워야 할지’ 모르는 상황은 여전히 반복됩니다.</p>
+      <div class="cards four">
+        <article class="card">
+          <h4>혼잡</h4>
+          <p>목적지 주변에 차량이 몰리면 승하차와 정차가 동시에 혼선됩니다.</p>
+        </article>
+        <article class="card">
+          <h4>정차 판단 부재</h4>
+          <p>내비게이션은 도착까지 안내하지만 실제 정차 위치 선택은 운전자 판단에 남습니다.</p>
+        </article>
+        <article class="card">
+          <h4>안전 리스크</h4>
+          <p>횡단보도, 좁은 도로, 시야 조건에 따라 정차 위험도는 크게 달라집니다.</p>
+        </article>
+        <article class="card">
+          <h4>데이터 미축적</h4>
+          <p>정차 후보와 실제 이용 결과가 구조화되지 않아 같은 판단이 반복됩니다.</p>
+        </article>
+      </div>
+    </section>
 
-      <section id="solution" class="section">
-        <div class="section-head">
-          <div class="left-group"><span class="section-no">02</span><h3>솔루션</h3></div>
-          <p>데이터로 찾는, 더 적합한 정차 위치.</p>
-          <a href="#api">AI와 데이터가 만드는 더 스마트한 정차 →</a>
+    <section class="section" id="service">
+      <div class="section-head">
+        <span class="section-no">02</span>
+        <h3>서비스 설명 — 정차 안내 API·SDK</h3>
+      </div>
+      <div class="service-grid">
+        <div class="service-list">
+          <div class="service-item"><span>01</span><div><b>정차 후보 데이터 구조화</b><p>목적지 전면부 A/B/C 후보구역을 정리합니다.</p></div></div>
+          <div class="service-item"><span>02</span><div><b>위험도 비교</b><p>안전성, 접근성, 운영성을 기준으로 후보를 비교합니다.</p></div></div>
+          <div class="service-item"><span>03</span><div><b>최적 정차구역 반환</b><p>추천 구역과 대체 구역을 API 형태로 제공합니다.</p></div></div>
         </div>
-        <div class="solution-panel">
-          <div class="solution-copy">
-            <ul>
-              <li><span>01</span> 목적지 전면부 정차 후보 데이터 구조화</li>
-              <li><span>02</span> 안전·접근성·현장 조건 기반 위험도 계산</li>
-              <li><span>03</span> 추천 정차구역과 대체구역 반환</li>
-            </ul>
-            <div class="prototype-badge">현재 단계 · Rule-based Prototype API v0.2</div>
-          </div>
-          <div class="solution-visual">
-            <div class="tech-video-card">
-              <video class="solution-video" autoplay muted loop playsinline preload="metadata" poster="assets/video/solution-poster.jpg">
-                <source src="assets/video/solution-tech.mp4" type="video/mp4" />
-              </video>
-              <div class="video-caption">Mobility Data · Recommendation · Connected Experience</div>
-            </div>
-            <img class="integration-strip" src="assets/solution-integrations.png" alt="모바일 내비 연동 및 차량 IVI 연동 예시" />
-          </div>
-        </div>
-      </section>
-
-      <section id="api" class="section">
-        <div class="section-head">
-          <div class="left-group"><span class="section-no">03</span><h3>API</h3></div>
-          <p>간단한 연동으로, 스마트한 정차 경험을.</p>
-        </div>
-        <div class="api-grid">
-          <div class="api-main">
-            <p class="api-summary">끼긱의 API MVP는 목적지와 차량 조건을 입력받아 후보 정차구역의 위험도를 계산하고, 가장 적합한 후보를 반환하는 구조로 검증 중입니다.</p>
-            <div class="tabs" role="tablist">
-              <button class="tab active" data-tab="request">요청 예시</button>
-              <button class="tab" data-tab="response">응답 예시</button>
-            </div>
-            <pre id="request" class="code active"><code>POST /recommend
+        <div class="service-box">
+          <div class="service-box-title">Prototype API v0.2</div>
+<pre><code>POST /recommend
 {
   "destination_id": "D001",
   "vehicle_type": "passenger"
-}</code></pre>
-            <pre id="response" class="code"><code>{
-  "destination_id": "D001",
-  "recommended_candidate_id": "C001",
-  "risk_score": 0,
-  "walking_distance_m": 18,
-  "reason": [
-    "Lowest calculated risk score among available candidates"
-  ]
-}</code></pre>
-          </div>
-          <div class="api-side">
-            <div><span>⌖</span><b>목적지</b><small>destination_id</small></div>
-            <div><span>▱</span><b>차량 유형</b><small>vehicle_type</small></div>
-            <div><span>◎</span><b>추천 정차구역</b><small>candidate_id</small></div>
-            <div><span>↔</span><b>보행거리</b><small>walking_distance_m</small></div>
-            <div><span>△</span><b>위험도</b><small>risk_score</small></div>
-          </div>
-        </div>
-      </section>
+}
 
-      <section id="usecase" class="section">
-        <div class="section-head">
-          <div class="left-group"><span class="section-no">04</span><h3>적용 분야</h3></div>
-          <p>더 스마트한 모빌리티 생태계를 함께 만들어갑니다.</p>
-          <a href="#contact">다양한 파트너와, 더 큰 가능성으로 →</a>
+→ recommended_candidate_id: "C001"</code></pre>
         </div>
-        <div class="cards four use-cards">
-          <article class="card use"><div class="icon">⌖</div><h4>내비 · 지도</h4><p>도착 후 실제 정차 위치까지 이어지는<br>라스트 100m 정보 제공</p></article>
-          <article class="card use"><div class="icon">▣</div><h4>모빌리티 플랫폼</h4><p>택시·호출·물류 등 다양한 이동 서비스에<br>승하차·픽업 지점 추천</p></article>
-          <article class="card use"><div class="icon">P</div><h4>주차관제</h4><p>시설 전면부 정차 후보와 운영 정책을 잇는<br>데이터 레이어 제공</p></article>
-          <article class="card use"><div class="icon">▱</div><h4>차량 OEM / IVI</h4><p>차량 화면에서 활용 가능한<br>정차 추천 API·SDK 확장</p></article>
-        </div>
-      </section>
-
-      <section id="contact" class="contact-strip">
-        <div>
-          <div class="eyebrow">PARTNERSHIP · POC · DATA COLLABORATION</div>
-          <h3>목적지 도착 이후의 정차 경험을 함께 설계합니다.</h3>
-        </div>
-        <a class="btn btn-primary" href="mailto:contact@ggigik.com">contact@ggigik.com <span>→</span></a>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <a class="brand footer-brand" href="#top">
-        <img src="assets/logo.png" alt="GGi-gik 로고" class="brand-logo small" />
-        <span class="brand-copy"><b>GGi-gik</b><small>끼긱</small></span>
-      </a>
-      <div class="footer-links">
-        <a href="#problem">회사소개</a>
-        <a href="#api">API</a>
-        <a href="#contact">문의</a>
       </div>
-      <div class="footer-contact">✉ contact@ggigik.com</div>
-      <div class="copyright">© 2026 GGi-gik. All rights reserved.</div>
-    </footer>
-  </div>
+    </section>
 
-  <script src="assets/app.js"></script>
+    <section class="section" id="usecase">
+      <div class="section-head">
+        <span class="section-no">03</span>
+        <h3>적용 분야</h3>
+      </div>
+      <div class="cards four">
+        <article class="card"><h4>내비게이션</h4><p>도착 이후 실제 정차 위치까지 이어지는 라스트 100m 정보 제공</p></article>
+        <article class="card"><h4>차량 IVI</h4><p>차량 화면에서 활용 가능한 정차 추천 인터페이스 확장</p></article>
+        <article class="card"><h4>모빌리티 플랫폼</h4><p>택시·호출·배달·물류 서비스에 승하차·픽업 지점 추천</p></article>
+        <article class="card"><h4>시설 운영</h4><p>시설 전면부 정차 운영과 관제 판단을 돕는 데이터 레이어</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="partnership">
+      <div class="section-head">
+        <span class="section-no">04</span>
+        <h3>사업제휴 / PoC 문의</h3>
+      </div>
+      <div class="partnership-panel">
+        <div class="chip">내비 · 지도 연동</div>
+        <div class="chip">차량 IVI / OEM 협력</div>
+        <div class="chip">데이터 협력</div>
+        <div class="chip">시설 운영 PoC</div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div>
+        <div class="section-kicker">CONTACT</div>
+        <h3>회사 이메일과 카카오톡 채널로 문의받을 수 있습니다.</h3>
+        <p>현재는 회사 이메일을 기본 문의 채널로 운영하고, 카카오톡 채널 개설 시 같은 영역에 추가하면 됩니다.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:contact@ggigik.com">contact@ggigik.com</a>
+        <div class="kakao-placeholder">카카오톡 채널<br><span>개설 후 링크 추가 예정</span></div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
