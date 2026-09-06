@@ -29,7 +29,10 @@
         <div class="eyebrow">better stops for a smarter tomorrow</div>
         <h1><span class="nowrap">차가 잠깐 서는 자리를,</span><br><em>똑똑하게 안내합니다.</em></h1>
         <h2>최적 정차구역 추천 API·SDK 서비스</h2>
-        <p>끼긱은 목적지 전면부의 정차 후보를 비교해,<br>차량 유형과 현장 조건에 맞는 정차 위치를 추천하는 B2B 모빌리티 API·SDK를 제공합니다.</p>
+        <p>
+          끼긱은 목적지 전면부의 정차 후보를 비교해,<br>
+          차량 유형과 현장 조건에 맞는 정차 위치를 추천하는 <span class="keep-together">B2B 모빌리티 API·SDK를 제공합니다.</span>
+        </p>
         <div class="hero-actions">
           <a class="btn primary" href="#service">서비스 알아보기</a>
           <a class="btn outline" href="#contact">문의하기</a>
@@ -40,11 +43,6 @@
         <video autoplay muted loop playsinline preload="metadata" aria-label="GGi-gik 서비스 소개 영상">
           <source src="assets/hero.mp4" type="video/mp4" />
         </video>
-        <div class="zone-row" aria-hidden="true">
-          <div class="zone active"><b>A</b><span>추천 정차구역</span></div>
-          <div class="zone"><b>B</b><span>대체 구역</span></div>
-          <div class="zone"><b>C</b><span>대체 구역</span></div>
-        </div>
       </div>
     </section>
 
@@ -86,7 +84,12 @@
 
     <section class="section" id="api">
       <div class="section-shell">
-        <div class="section-title"><span>03</span><h3>API</h3></div>
+        <div class="section-title"><span>03</span><h3>API</h3><small class="demo-label">Example · Prototype</small></div>
+        <div class="api-zones" aria-label="API 추천 결과 예시">
+          <div class="api-zone selected"><b>A</b><span>추천 정차구역</span></div>
+          <div class="api-zone"><b>B</b><span>대체 구역</span></div>
+          <div class="api-zone"><b>C</b><span>대체 구역</span></div>
+        </div>
         <div class="api-grid">
           <pre><code>POST /recommend
 {
@@ -105,23 +108,25 @@
     <section class="section alt" id="usecase">
       <div class="section-shell">
         <div class="section-title"><span>04</span><h3>적용 분야</h3></div>
-        <div class="cards four">
-          <article class="card"><h4>내비게이션 · 지도</h4><p>도착 이후 실제 정차 위치까지 이어지는 라스트 100m 정보 제공</p></article>
-          <article class="card"><h4>차량 IVI / OEM</h4><p>차량 화면에서 활용 가능한 정차 추천 인터페이스 확장</p></article>
-          <article class="card"><h4>모빌리티 플랫폼</h4><p>택시·호출·배달·물류 서비스에 승하차·픽업 지점 추천</p></article>
-          <article class="card"><h4>시설 운영</h4><p>시설 전면부 정차 운영과 관제 판단을 돕는 데이터 레이어</p></article>
+        <div class="cards four usecase-cards">
+          <article class="card"><h4>내비게이션 · 지도</h4><p>도착 이후 실제 정차 위치까지 이어지는 라스트 100m 정보를 제공합니다.</p></article>
+          <article class="card"><h4>차량 IVI / OEM</h4><p>차량 화면에서 활용할 수 있는 정차 추천 인터페이스로 확장할 수 있습니다.</p></article>
+          <article class="card"><h4>모빌리티 플랫폼</h4><p>택시·호출·배달·물류 서비스의 승하차·픽업 지점 추천에 활용할 수 있습니다.</p></article>
+          <article class="card"><h4>시설 운영</h4><p>시설 전면부의 정차 운영과 관제 판단을 지원하는 데이터 레이어로 활용할 수 있습니다.</p></article>
         </div>
       </div>
     </section>
 
     <section class="contact" id="contact">
       <div class="section-shell contact-inner">
-        <div>
+        <div class="contact-heading">
           <div class="eyebrow">CONTACT</div>
-          <h3>사업제휴 · PoC · 데이터 협력 문의</h3>
+          <div class="contact-title-row">
+            <h3>사업제휴 · PoC · 데이터 협력 문의</h3>
+            <a class="contact-mail" href="mailto:contact@ggigik.com">contact@ggigik.com</a>
+          </div>
           <p>끼긱의 정차 데이터와 API·SDK 연동에 대해 문의해주세요.</p>
         </div>
-        <a class="contact-mail" href="mailto:contact@ggigik.com">contact@ggigik.com</a>
       </div>
     </section>
   </main>
