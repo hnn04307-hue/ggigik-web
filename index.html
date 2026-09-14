@@ -1,134 +1,1378 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="GGi-gik | 최적 정차구역 추천 API·SDK 서비스" />
-  <meta name="theme-color" content="#ffffff" />
-  <title>GGi-gik | 최적 정차구역 추천 API·SDK 서비스</title>
-  <link rel="stylesheet" href="assets/styles.css" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <meta
+    name="description"
+    content="GGi-gik | 최적 정차구역 추천 API·SDK 서비스"
+  />
+
+  <meta
+    name="theme-color"
+    content="#ffffff"
+  />
+
+  <title>
+    GGi-gik | 최적 정차구역 추천 API·SDK 서비스
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="assets/styles.css"
+  />
 </head>
+
+
 <body>
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
   <header class="topbar">
-    <a class="brand" href="#top" aria-label="GGi-gik 홈">
-      <img src="assets/logo-navy.png" alt="GGi-gik 로고" class="brand-logo" />
-      <span class="brand-copy"><b>GGi-gik</b><small>끼긱</small></span>
+
+    <a
+      class="brand"
+      href="#top"
+      aria-label="GGi-gik 홈"
+      data-i18n-aria-label="brandAria"
+    >
+
+      <img
+        src="assets/logo-navy.png"
+        alt="GGi-gik logo"
+        class="brand-logo"
+      />
+
+      <span class="brand-copy">
+
+        <b>
+          GGi-gik
+        </b>
+
+        <small>
+          끼긱
+        </small>
+
+      </span>
+
     </a>
-    <nav class="nav" aria-label="주요 메뉴">
-      <a href="#problem">문제</a>
-      <a href="#service">솔루션</a>
-      <a href="#api">API</a>
-      <a href="#usecase">적용 분야</a>
-      <a href="#contact">문의하기</a>
-    </nav>
+
+
+    <div class="topbar-right">
+
+      <nav
+        class="nav"
+        aria-label="주요 메뉴"
+        data-i18n-aria-label="navAria"
+      >
+
+        <a
+          href="#problem"
+          data-i18n="navProblem"
+        >
+          문제
+        </a>
+
+        <a
+          href="#service"
+          data-i18n="navSolution"
+        >
+          솔루션
+        </a>
+
+        <a
+          href="#api"
+          data-i18n="navApi"
+        >
+          API
+        </a>
+
+        <a
+          href="#usecase"
+          data-i18n="navUsecase"
+        >
+          적용 분야
+        </a>
+
+        <a
+          href="#contact"
+          data-i18n="navContact"
+        >
+          문의하기
+        </a>
+
+      </nav>
+
+
+      <!-- Language switch -->
+      <div
+        class="language-switch"
+        role="group"
+        aria-label="Language"
+      >
+
+        <button
+          type="button"
+          class="lang-btn active"
+          data-lang-btn="ko"
+          aria-pressed="true"
+        >
+          KO
+        </button>
+
+        <span class="lang-divider">
+          /
+        </span>
+
+        <button
+          type="button"
+          class="lang-btn"
+          data-lang-btn="en"
+          aria-pressed="false"
+        >
+          EN
+        </button>
+
+      </div>
+
+    </div>
+
   </header>
 
+
+
   <main id="top">
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
     <section class="hero section-shell">
+
       <div class="hero-copy">
-        <div class="eyebrow">better stops for a smarter tomorrow</div>
-        <h1><span class="nowrap">차가 잠깐 서는 자리를,</span><br><em>똑똑하게 안내합니다.</em></h1>
-        <h2>최적 정차구역 추천 API·SDK 서비스</h2>
-        <p>
-          끼긱은 목적지 전면부의 정차 후보를 비교해,<br>
-          차량 유형과 현장 조건에 맞는 정차 위치를 추천하는 <span class="keep-together">B2B 모빌리티 API·SDK를 제공합니다.</span>
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#service">서비스 알아보기</a>
-          <a class="btn outline" href="#contact">문의하기</a>
+
+        <div class="eyebrow">
+          better stops for a smarter tomorrow
         </div>
+
+
+        <h1
+          data-i18n-html="heroTitle"
+        >
+          <span class="nowrap">
+            차가 잠깐 서는 자리를,
+          </span>
+
+          <br />
+
+          <em>
+            똑똑하게 안내합니다.
+          </em>
+        </h1>
+
+
+        <h2
+          data-i18n="heroSubtitle"
+        >
+          최적 정차구역 추천 API·SDK 서비스
+        </h2>
+
+
+        <p
+          data-i18n-html="heroDescription"
+        >
+          끼긱은 목적지 전면부의 정차 후보를 비교해,
+          <br />
+
+          차량 유형과 현장 조건에 맞는 정차 위치를 추천하는
+          <span class="keep-together">
+            B2B 모빌리티 API·SDK를 제공합니다.
+          </span>
+        </p>
+
+
+        <div class="hero-actions">
+
+          <a
+            class="btn primary"
+            href="#service"
+            data-i18n="heroServiceButton"
+          >
+            서비스 알아보기
+          </a>
+
+          <a
+            class="btn outline"
+            href="#contact"
+            data-i18n="heroContactButton"
+          >
+            문의하기
+          </a>
+
+        </div>
+
       </div>
+
 
       <div class="hero-media">
-        <video autoplay muted loop playsinline preload="metadata" aria-label="GGi-gik 서비스 소개 영상">
-          <source src="assets/hero.mp4" type="video/mp4" />
+
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-label="GGi-gik 서비스 소개 영상"
+          data-i18n-aria-label="videoAria"
+        >
+
+          <source
+            src="assets/hero.mp4"
+            type="video/mp4"
+          />
+
         </video>
+
       </div>
+
     </section>
 
-    <section class="section" id="problem">
+
+
+    <!-- =====================================================
+         PROBLEM
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="problem"
+    >
+
       <div class="section-shell">
-        <div class="section-title"><span>01</span><h3>끼긱이 해결하는 문제</h3></div>
-        <p class="lead">3분 내외의 방문, 목적지에 다 와도 ‘어디에 세워야 할지’ 모르는 상황은 반복됩니다.</p>
+
+        <div class="section-title">
+
+          <span>
+            01
+          </span>
+
+          <h3
+            data-i18n="problemTitle"
+          >
+            끼긱이 해결하는 문제
+          </h3>
+
+        </div>
+
+
+        <p
+          class="lead"
+          data-i18n="problemLead"
+        >
+          3분 내외의 방문, 목적지에 다 와도 ‘어디에 세워야 할지’ 모르는 상황은 반복됩니다.
+        </p>
+
+
         <div class="cards four">
-          <article class="card"><h4>혼잡</h4><p>목적지 주변에 차량이 몰리면 승하차와 정차가 동시에 혼선됩니다.</p></article>
-          <article class="card"><h4>정차 판단 부재</h4><p>내비게이션은 도착까지 안내하지만 실제 정차 위치 선택은 운전자 판단에 남습니다.</p></article>
-          <article class="card"><h4>안전 리스크</h4><p>횡단보도, 좁은 도로, 시야 조건에 따라 정차 위험도는 크게 달라집니다.</p></article>
-          <article class="card"><h4>데이터 미축적</h4><p>정차 후보와 실제 이용 결과가 구조화되지 않아 같은 판단이 반복됩니다.</p></article>
+
+
+          <article class="card">
+
+            <h4
+              data-i18n="problem1Title"
+            >
+              혼잡
+            </h4>
+
+            <p
+              data-i18n="problem1Text"
+            >
+              목적지 주변에 차량이 몰리면 승하차와 정차가 동시에 혼선됩니다.
+            </p>
+
+          </article>
+
+
+
+          <article class="card">
+
+            <h4
+              data-i18n="problem2Title"
+            >
+              정차 판단 부재
+            </h4>
+
+            <p
+              data-i18n="problem2Text"
+            >
+              내비게이션은 도착까지 안내하지만 실제 정차 위치 선택은 운전자 판단에 남습니다.
+            </p>
+
+          </article>
+
+
+
+          <article class="card">
+
+            <h4
+              data-i18n="problem3Title"
+            >
+              안전 리스크
+            </h4>
+
+            <p
+              data-i18n="problem3Text"
+            >
+              횡단보도, 좁은 도로, 시야 조건에 따라 정차 위험도는 크게 달라집니다.
+            </p>
+
+          </article>
+
+
+
+          <article class="card">
+
+            <h4
+              data-i18n="problem4Title"
+            >
+              데이터 미축적
+            </h4>
+
+            <p
+              data-i18n="problem4Text"
+            >
+              정차 후보와 실제 이용 결과가 구조화되지 않아 같은 판단이 반복됩니다.
+            </p>
+
+          </article>
+
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section alt" id="service">
+
+
+    <!-- =====================================================
+         SERVICE
+    ====================================================== -->
+
+    <section
+      class="section alt"
+      id="service"
+    >
+
       <div class="section-shell">
-        <div class="section-title"><span>02</span><h3>정차 안내 API·SDK</h3></div>
+
+        <div class="section-title">
+
+          <span>
+            02
+          </span>
+
+          <h3
+            data-i18n="serviceTitle"
+          >
+            정차 안내 API·SDK
+          </h3>
+
+        </div>
+
+
         <div class="service-grid">
+
+
           <div class="service-list">
-            <div class="service-item"><span>01</span><div><b>정차 후보 데이터 구조화</b><p>목적지 전면부의 정차 후보구역을 데이터로 정리합니다.</p></div></div>
-            <div class="service-item"><span>02</span><div><b>위험도 비교</b><p>안전성·접근성·현장 조건을 기준으로 후보를 비교합니다.</p></div></div>
-            <div class="service-item"><span>03</span><div><b>최적 정차구역 추천</b><p>추천 구역과 대체 구역을 API 형태로 반환합니다.</p></div></div>
-          </div>
-          <div class="logic-card">
-            <div class="logic-label">Prototype API v0.2</div>
-            <div class="logic-flow">
-              <div><small>INPUT</small><b>목적지 · 차량 유형</b></div>
-              <i>→</i>
-              <div><small>LOGIC</small><b>후보 비교 · 위험도 계산</b></div>
-              <i>→</i>
-              <div><small>OUTPUT</small><b>추천 정차구역</b></div>
+
+
+            <div class="service-item">
+
+              <span>
+                01
+              </span>
+
+              <div>
+
+                <b
+                  data-i18n="service1Title"
+                >
+                  정차 후보 데이터 구조화
+                </b>
+
+                <p
+                  data-i18n="service1Text"
+                >
+                  목적지 전면부의 정차 후보구역을 데이터로 정리합니다.
+                </p>
+
+              </div>
+
             </div>
+
+
+
+            <div class="service-item">
+
+              <span>
+                02
+              </span>
+
+              <div>
+
+                <b
+                  data-i18n="service2Title"
+                >
+                  위험도 비교
+                </b>
+
+                <p
+                  data-i18n="service2Text"
+                >
+                  안전성·접근성·현장 조건을 기준으로 후보를 비교합니다.
+                </p>
+
+              </div>
+
+            </div>
+
+
+
+            <div class="service-item">
+
+              <span>
+                03
+              </span>
+
+              <div>
+
+                <b
+                  data-i18n="service3Title"
+                >
+                  최적 정차구역 추천
+                </b>
+
+                <p
+                  data-i18n="service3Text"
+                >
+                  추천 구역과 대체 구역을 API 형태로 반환합니다.
+                </p>
+
+              </div>
+
+            </div>
+
+
           </div>
+
+
+
+          <div class="logic-card">
+
+            <div class="logic-label">
+              Prototype API v0.2
+            </div>
+
+
+            <div class="logic-flow">
+
+
+              <div>
+
+                <small>
+                  INPUT
+                </small>
+
+                <b
+                  data-i18n="logicInput"
+                >
+                  목적지 · 차량 유형
+                </b>
+
+              </div>
+
+
+              <i aria-hidden="true">
+                →
+              </i>
+
+
+              <div>
+
+                <small>
+                  LOGIC
+                </small>
+
+                <b
+                  data-i18n="logicProcess"
+                >
+                  후보 비교 · 위험도 계산
+                </b>
+
+              </div>
+
+
+              <i aria-hidden="true">
+                →
+              </i>
+
+
+              <div>
+
+                <small>
+                  OUTPUT
+                </small>
+
+                <b
+                  data-i18n="logicOutput"
+                >
+                  추천 정차구역
+                </b>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section" id="api">
+
+
+    <!-- =====================================================
+         API
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="api"
+    >
+
       <div class="section-shell">
-        <div class="section-title"><span>03</span><h3>API</h3><small class="demo-label">Example · Prototype</small></div>
-        <div class="api-zones" aria-label="API 추천 결과 예시">
-          <div class="api-zone selected"><b>A</b><span>추천 정차구역</span></div>
-          <div class="api-zone"><b>B</b><span>대체 구역</span></div>
-          <div class="api-zone"><b>C</b><span>대체 구역</span></div>
+
+
+        <div class="section-title">
+
+          <span>
+            03
+          </span>
+
+          <h3>
+            API
+          </h3>
+
+          <small class="demo-label">
+            Example · Prototype
+          </small>
+
         </div>
+
+
+
+        <div
+          class="api-zones"
+          aria-label="API 추천 결과 예시"
+          data-i18n-aria-label="apiExampleAria"
+        >
+
+
+          <div class="api-zone selected">
+
+            <b>
+              A
+            </b>
+
+            <span
+              data-i18n="apiRecommended"
+            >
+              추천 정차구역
+            </span>
+
+          </div>
+
+
+
+          <div class="api-zone">
+
+            <b>
+              B
+            </b>
+
+            <span
+              data-i18n="apiAlternative"
+            >
+              대체 구역
+            </span>
+
+          </div>
+
+
+
+          <div class="api-zone">
+
+            <b>
+              C
+            </b>
+
+            <span
+              data-i18n="apiAlternative"
+            >
+              대체 구역
+            </span>
+
+          </div>
+
+
+        </div>
+
+
+
         <div class="api-grid">
+
           <pre><code>POST /recommend
 {
   "destination_id": "D001",
   "vehicle_type": "passenger"
 }</code></pre>
+
           <pre><code>{
   "recommended_candidate_id": "C001",
   "risk_score": 0,
   "walking_distance_m": 18
 }</code></pre>
+
         </div>
+
+
       </div>
+
     </section>
 
-    <section class="section alt" id="usecase">
+
+
+    <!-- =====================================================
+         USE CASES
+    ====================================================== -->
+
+    <section
+      class="section alt"
+      id="usecase"
+    >
+
       <div class="section-shell">
-        <div class="section-title"><span>04</span><h3>적용 분야</h3></div>
-        <div class="cards four usecase-cards">
-          <article class="card"><h4>내비게이션 · 지도</h4><p>도착 이후 실제 정차 위치까지 이어지는 라스트 100m 정보를 제공합니다.</p></article>
-          <article class="card"><h4>차량 IVI / OEM</h4><p>차량 화면에서 활용할 수 있는 정차 추천 인터페이스로 확장할 수 있습니다.</p></article>
-          <article class="card"><h4>모빌리티 플랫폼</h4><p>택시·호출·배달·물류 서비스의 승하차·픽업 지점 추천에 활용할 수 있습니다.</p></article>
-          <article class="card"><h4>시설 운영</h4><p>시설 전면부의 정차 운영과 관제 판단을 지원하는 데이터 레이어로 활용할 수 있습니다.</p></article>
+
+
+        <div class="section-title">
+
+          <span>
+            04
+          </span>
+
+          <h3
+            data-i18n="usecaseTitle"
+          >
+            적용 분야
+          </h3>
+
         </div>
+
+
+
+        <div class="cards four usecase-cards">
+
+
+          <article class="card">
+
+            <h4
+              data-i18n="usecase1Title"
+            >
+              내비게이션 · 지도
+            </h4>
+
+            <p
+              data-i18n="usecase1Text"
+            >
+              도착 이후 실제 정차 위치까지 이어지는 라스트 100m 정보를 제공합니다.
+            </p>
+
+          </article>
+
+
+
+          <article class="card">
+
+            <h4
+              data-i18n="usecase2Title"
+            >
+              차량 IVI / OEM
+            </h4>
+
+            <p
+              data-i18n="usecase2Text"
+            >
+              차량 화면에서 활용할 수 있는 정차 추천 인터페이스로 확장할 수 있습니다.
+            </p>
+
+          </article>
+
+
+
+          <article class="card">
+
+            <h4
+              data-i18n="usecase3Title"
+            >
+              모빌리티 플랫폼
+            </h4>
+
+            <p
+              data-i18n="usecase3Text"
+            >
+              택시·호출·배달·물류 서비스의 승하차·픽업 지점 추천에 활용할 수 있습니다.
+            </p>
+
+          </article>
+
+
+
+          <article class="card">
+
+            <h4
+              data-i18n="usecase4Title"
+            >
+              시설 운영
+            </h4>
+
+            <p
+              data-i18n="usecase4Text"
+            >
+              시설 전면부의 정차 운영과 관제 판단을 지원하는 데이터 레이어로 활용할 수 있습니다.
+            </p>
+
+          </article>
+
+
+        </div>
+
       </div>
+
     </section>
 
-    <section class="contact" id="contact">
+
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+    <section
+      class="contact"
+      id="contact"
+    >
+
       <div class="section-shell contact-inner">
+
+
         <div class="contact-heading">
-          <div class="eyebrow">CONTACT</div>
-          <div class="contact-title-row">
-            <h3>사업제휴 · PoC · 데이터 협력 문의</h3>
-            <a class="contact-mail" href="mailto:contact@ggigik.com">contact@ggigik.com</a>
+
+          <div class="eyebrow">
+            CONTACT
           </div>
-          <p>끼긱의 정차 데이터와 API·SDK 연동에 대해 문의해주세요.</p>
+
+
+          <div class="contact-title-row">
+
+            <h3
+              data-i18n="contactTitle"
+            >
+              사업제휴 · PoC · 데이터 협력 문의
+            </h3>
+
+            <a
+              class="contact-mail"
+              href="mailto:contact@ggigik.com"
+            >
+              contact@ggigik.com
+            </a>
+
+          </div>
+
+
+          <p
+            data-i18n="contactDescription"
+          >
+            끼긱의 정차 데이터와 API·SDK 연동에 대해 문의해주세요.
+          </p>
+
         </div>
+
+
       </div>
+
     </section>
+
+
   </main>
+
+
+
+  <!-- =====================================================
+       LANGUAGE SWITCH
+       Same-page Korean / English translation
+  ====================================================== -->
+
+  <script>
+
+    const translations = {
+
+      ko: {
+
+        documentTitle:
+          "GGi-gik | 최적 정차구역 추천 API·SDK 서비스",
+
+        metaDescription:
+          "GGi-gik | 최적 정차구역 추천 API·SDK 서비스",
+
+        brandAria:
+          "GGi-gik 홈",
+
+        navAria:
+          "주요 메뉴",
+
+        videoAria:
+          "GGi-gik 서비스 소개 영상",
+
+        apiExampleAria:
+          "API 추천 결과 예시",
+
+        navProblem:
+          "문제",
+
+        navSolution:
+          "솔루션",
+
+        navApi:
+          "API",
+
+        navUsecase:
+          "적용 분야",
+
+        navContact:
+          "문의하기",
+
+        heroTitle:
+          '<span class="nowrap">차가 잠깐 서는 자리를,</span><br><em>똑똑하게 안내합니다.</em>',
+
+        heroSubtitle:
+          "최적 정차구역 추천 API·SDK 서비스",
+
+        heroDescription:
+          '끼긱은 목적지 전면부의 정차 후보를 비교해,<br>차량 유형과 현장 조건에 맞는 정차 위치를 추천하는 <span class="keep-together">B2B 모빌리티 API·SDK를 제공합니다.</span>',
+
+        heroServiceButton:
+          "서비스 알아보기",
+
+        heroContactButton:
+          "문의하기",
+
+        problemTitle:
+          "끼긱이 해결하는 문제",
+
+        problemLead:
+          "3분 내외의 방문, 목적지에 다 와도 ‘어디에 세워야 할지’ 모르는 상황은 반복됩니다.",
+
+        problem1Title:
+          "혼잡",
+
+        problem1Text:
+          "목적지 주변에 차량이 몰리면 승하차와 정차가 동시에 혼선됩니다.",
+
+        problem2Title:
+          "정차 판단 부재",
+
+        problem2Text:
+          "내비게이션은 도착까지 안내하지만 실제 정차 위치 선택은 운전자 판단에 남습니다.",
+
+        problem3Title:
+          "안전 리스크",
+
+        problem3Text:
+          "횡단보도, 좁은 도로, 시야 조건에 따라 정차 위험도는 크게 달라집니다.",
+
+        problem4Title:
+          "데이터 미축적",
+
+        problem4Text:
+          "정차 후보와 실제 이용 결과가 구조화되지 않아 같은 판단이 반복됩니다.",
+
+        serviceTitle:
+          "정차 안내 API·SDK",
+
+        service1Title:
+          "정차 후보 데이터 구조화",
+
+        service1Text:
+          "목적지 전면부의 정차 후보구역을 데이터로 정리합니다.",
+
+        service2Title:
+          "위험도 비교",
+
+        service2Text:
+          "안전성·접근성·현장 조건을 기준으로 후보를 비교합니다.",
+
+        service3Title:
+          "최적 정차구역 추천",
+
+        service3Text:
+          "추천 구역과 대체 구역을 API 형태로 반환합니다.",
+
+        logicInput:
+          "목적지 · 차량 유형",
+
+        logicProcess:
+          "후보 비교 · 위험도 계산",
+
+        logicOutput:
+          "추천 정차구역",
+
+        apiRecommended:
+          "추천 정차구역",
+
+        apiAlternative:
+          "대체 구역",
+
+        usecaseTitle:
+          "적용 분야",
+
+        usecase1Title:
+          "내비게이션 · 지도",
+
+        usecase1Text:
+          "도착 이후 실제 정차 위치까지 이어지는 라스트 100m 정보를 제공합니다.",
+
+        usecase2Title:
+          "차량 IVI / OEM",
+
+        usecase2Text:
+          "차량 화면에서 활용할 수 있는 정차 추천 인터페이스로 확장할 수 있습니다.",
+
+        usecase3Title:
+          "모빌리티 플랫폼",
+
+        usecase3Text:
+          "택시·호출·배달·물류 서비스의 승하차·픽업 지점 추천에 활용할 수 있습니다.",
+
+        usecase4Title:
+          "시설 운영",
+
+        usecase4Text:
+          "시설 전면부의 정차 운영과 관제 판단을 지원하는 데이터 레이어로 활용할 수 있습니다.",
+
+        contactTitle:
+          "사업제휴 · PoC · 데이터 협력 문의",
+
+        contactDescription:
+          "끼긱의 정차 데이터와 API·SDK 연동에 대해 문의해주세요."
+
+      },
+
+
+      en: {
+
+        documentTitle:
+          "GGi-gik | Curbside Stop Recommendation API · SDK",
+
+        metaDescription:
+          "GGi-gik provides a B2B mobility API and SDK for curbside stop candidate recommendation.",
+
+        brandAria:
+          "GGi-gik Home",
+
+        navAria:
+          "Main navigation",
+
+        videoAria:
+          "GGi-gik service introduction video",
+
+        apiExampleAria:
+          "API recommendation result example",
+
+        navProblem:
+          "Problem",
+
+        navSolution:
+          "Solution",
+
+        navApi:
+          "API",
+
+        navUsecase:
+          "Use Cases",
+
+        navContact:
+          "Contact",
+
+        heroTitle:
+          '<span class="nowrap">Better curbside stops,</span><br><em>guided intelligently.</em>',
+
+        heroSubtitle:
+          "Curbside Stop Recommendation API · SDK",
+
+        heroDescription:
+          'GGi-gik compares curbside stop candidates near a destination and recommends suitable stopping locations based on vehicle type and site conditions through a <span class="keep-together">B2B mobility API · SDK.</span>',
+
+        heroServiceButton:
+          "Explore the Service",
+
+        heroContactButton:
+          "Contact Us",
+
+        problemTitle:
+          "The Problem GGi-gik Solves",
+
+        problemLead:
+          "Even for a short visit of only a few minutes, drivers often reach their destination without knowing where they should stop.",
+
+        problem1Title:
+          "Curbside Congestion",
+
+        problem1Text:
+          "When vehicles converge around a destination, stopping, pick-up and drop-off activities can quickly become disorganized.",
+
+        problem2Title:
+          "Last-Meter Uncertainty",
+
+        problem2Text:
+          "Navigation systems guide drivers to the destination, but choosing the actual stopping point is still left to the driver.",
+
+        problem3Title:
+          "Safety Risk",
+
+        problem3Text:
+          "Stopping conditions can vary significantly depending on crosswalks, road width, visibility and surrounding conditions.",
+
+        problem4Title:
+          "Unstructured Stop Data",
+
+        problem4Text:
+          "Candidate stopping locations and usage outcomes are rarely structured as reusable data, causing the same decisions to be repeated.",
+
+        serviceTitle:
+          "Curbside Stop Recommendation API · SDK",
+
+        service1Title:
+          "Structured Stop Candidate Data",
+
+        service1Text:
+          "Candidate curbside stopping locations near a destination are organized into a structured data format.",
+
+        service2Title:
+          "Candidate Risk Comparison",
+
+        service2Text:
+          "Candidates are compared using safety, accessibility and site-condition factors.",
+
+        service3Title:
+          "Recommended Stop Candidate",
+
+        service3Text:
+          "The system returns a recommended candidate and alternatives through an API-based response.",
+
+        logicInput:
+          "Destination · Vehicle Type",
+
+        logicProcess:
+          "Candidate Comparison · Risk Scoring",
+
+        logicOutput:
+          "Recommended Stop",
+
+        apiRecommended:
+          "Recommended Stop",
+
+        apiAlternative:
+          "Alternative",
+
+        usecaseTitle:
+          "Use Cases",
+
+        usecase1Title:
+          "Navigation · Maps",
+
+        usecase1Text:
+          "Extend navigation beyond arrival with last-100-meter information for the actual stopping point.",
+
+        usecase2Title:
+          "Vehicle IVI / OEM",
+
+        usecase2Text:
+          "The recommendation layer can be integrated into in-vehicle interfaces and mobility experiences.",
+
+        usecase3Title:
+          "Mobility Platforms",
+
+        usecase3Text:
+          "Applicable to pick-up and drop-off recommendations for taxi, ride-hailing, delivery and logistics services.",
+
+        usecase4Title:
+          "Facility Operations",
+
+        usecase4Text:
+          "Can serve as a data layer supporting curbside operations and operational decision-making around facilities.",
+
+        contactTitle:
+          "Partnership · PoC · Data Collaboration",
+
+        contactDescription:
+          "Contact us to discuss GGi-gik curbside data, API integration and SDK collaboration."
+
+      }
+
+    };
+
+
+
+    function setLanguage(language) {
+
+      const dictionary =
+        translations[language] ||
+        translations.ko;
+
+
+      document.documentElement.lang =
+        language;
+
+
+      document.title =
+        dictionary.documentTitle;
+
+
+      const description =
+        document.querySelector(
+          'meta[name="description"]'
+        );
+
+
+      if (description) {
+
+        description.setAttribute(
+          "content",
+          dictionary.metaDescription
+        );
+
+      }
+
+
+
+      document
+        .querySelectorAll(
+          "[data-i18n]"
+        )
+        .forEach(
+          element => {
+
+            const key =
+              element.dataset.i18n;
+
+
+            if (
+              Object.prototype.hasOwnProperty.call(
+                dictionary,
+                key
+              )
+            ) {
+
+              element.textContent =
+                dictionary[key];
+
+            }
+
+          }
+        );
+
+
+
+      document
+        .querySelectorAll(
+          "[data-i18n-html]"
+        )
+        .forEach(
+          element => {
+
+            const key =
+              element.dataset.i18nHtml;
+
+
+            if (
+              Object.prototype.hasOwnProperty.call(
+                dictionary,
+                key
+              )
+            ) {
+
+              element.innerHTML =
+                dictionary[key];
+
+            }
+
+          }
+        );
+
+
+
+      document
+        .querySelectorAll(
+          "[data-i18n-aria-label]"
+        )
+        .forEach(
+          element => {
+
+            const key =
+              element.dataset.i18nAriaLabel;
+
+
+            if (
+              Object.prototype.hasOwnProperty.call(
+                dictionary,
+                key
+              )
+            ) {
+
+              element.setAttribute(
+                "aria-label",
+                dictionary[key]
+              );
+
+            }
+
+          }
+        );
+
+
+
+      document
+        .querySelectorAll(
+          "[data-lang-btn]"
+        )
+        .forEach(
+          button => {
+
+            const active =
+              button.dataset.langBtn ===
+              language;
+
+
+            button.classList.toggle(
+              "active",
+              active
+            );
+
+
+            button.setAttribute(
+              "aria-pressed",
+              active
+                ? "true"
+                : "false"
+            );
+
+          }
+        );
+
+
+      try {
+
+        localStorage.setItem(
+          "ggigik-language",
+          language
+        );
+
+      } catch (error) {
+
+        console.warn(
+          "Language preference could not be saved."
+        );
+
+      }
+
+    }
+
+
+
+    document
+      .querySelectorAll(
+        "[data-lang-btn]"
+      )
+      .forEach(
+        button => {
+
+          button.addEventListener(
+            "click",
+            function () {
+
+              setLanguage(
+                this.dataset.langBtn
+              );
+
+            }
+          );
+
+        }
+      );
+
+
+
+    let initialLanguage =
+      "ko";
+
+
+    try {
+
+      const savedLanguage =
+        localStorage.getItem(
+          "ggigik-language"
+        );
+
+
+      if (
+        savedLanguage === "ko" ||
+        savedLanguage === "en"
+      ) {
+
+        initialLanguage =
+          savedLanguage;
+
+      }
+
+    } catch (error) {
+
+      initialLanguage =
+        "ko";
+
+    }
+
+
+    setLanguage(
+      initialLanguage
+    );
+
+  </script>
+
+
 </body>
+
 </html>
