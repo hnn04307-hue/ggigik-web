@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="GGi-gik | 정차 후보 추천 MVP"
+  />
+  <meta name="theme-color" content="#031423" />
+  <title>GGi-gik | 정차 후보 추천 MVP</title>
+  <link rel="stylesheet" href="assets/styles.css?v=20260915-8" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a
+        class="brand"
+        href="#top"
+        aria-label="GGi-gik 홈"
+        data-i18n-aria-label="brandAria"
+      >
+        <img
+          src="assets/logo-navy.png"
+          alt="GGi-gik logo"
+          class="brand-logo"
+        />
+        <span class="brand-copy">
+          <b>GGi-gik</b>
+          <small>끼긱</small>
+        </span>
+      </a>
+
+      <div class="topbar-right">
+        <nav
+          class="nav"
+          aria-label="주요 메뉴"
+          data-i18n-aria-label="navAria"
+        >
+          <a href="#problem" data-i18n="navProblem">문제</a>
+          <a href="#service" data-i18n="navSolution">해결</a>
+          <a href="#api" data-i18n="navApi">API</a>
+          <a href="#usecase" data-i18n="navUsecase">적용 분야</a>
+          <a href="#contact" data-i18n="navContact">문의하기</a>
+        </nav>
+
+        <div
+          class="language-switch"
+          role="group"
+          aria-label="Language"
+        >
+          <button
+            type="button"
+            class="lang-btn active"
+            data-lang-btn="ko"
+            aria-pressed="true"
+          >
+            KO
+          </button>
+          <span class="lang-divider" aria-hidden="true">/</span>
+          <button
+            type="button"
+            class="lang-btn"
+            data-lang-btn="en"
+            aria-pressed="false"
+          >
+            EN
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">better stops for a smarter tomorrow</div>
+
+          <h1 data-i18n-html="heroTitle">
+            <span class="hero-line">차가 잠깐 서는 자리를,</span>
+            <em class="hero-line">똑똑하게 안내합니다.</em>
+          </h1>
+
+          <h2 data-i18n="heroSubtitle">최적 정차구역 추천 MVP</h2>
+
+          <p data-i18n-html="heroDescription">
+            <span class="hero-desc-line">목적지 주변의 정차 구역을 비교해</span>
+            <span class="hero-desc-line">차량 유형과 현장 조건에 맞는 위치를 제시하는 기능형 MVP입니다.</span>
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#service" data-i18n="heroServiceButton">
+              서비스 알아보기
+            </a>
+            <a class="btn btn-outline" href="#contact" data-i18n="heroContactButton">
+              문의하기
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="assets/hero-bg.png"
+            aria-label="GGi-gik 서비스 소개 영상"
+            data-i18n-aria-label="videoAria"
+          >
+            <source src="assets/hero.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-overlay" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- 01 PROBLEM -->
+      <section class="section" id="problem">
+        <div class="section-head">
+          <div class="left-group">
+            <span class="section-no">01</span>
+            <h3 data-i18n="problemTitle">GGi-gik이 해결하는 문제</h3>
+          </div>
+        </div>
+
+        <div class="cards four">
+          <article class="card">
+            <div class="icon">01</div>
+            <h4 data-i18n="problem1Title">목적지 주변 혼잡</h4>
+            <p data-i18n="problem1Text">
+              차량이 한 지점에 몰리면 승하차와 단기 정차가 동시에 혼선됩니다.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">02</div>
+            <h4 data-i18n="problem2Title">정차 위치 판단의 공백</h4>
+            <p data-i18n="problem2Text">
+              내비게이션은 도착을 안내하지만 실제로 어디에 잠깐 설지는 운전자가 판단해야 합니다.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">03</div>
+            <h4 data-i18n="problem3Title">현장별 위험 차이</h4>
+            <p data-i18n="problem3Text">
+              횡단보도, 도로 폭, 시야 등 주변 조건에 따라 정차 적합도는 달라집니다.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">04</div>
+            <h4 data-i18n="problem4Title">정차 데이터의 비정형성</h4>
+            <p data-i18n="problem4Text">
+              후보 위치와 이용 조건이 구조화되지 않으면 같은 판단을 매번 반복하게 됩니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 02 SOLUTION -->
+      <section class="section" id="service">
+        <div class="section-head">
+          <div class="left-group">
+            <span class="section-no">02</span>
+            <h3 data-i18n="serviceTitle">정차 추천 방식</h3>
+          </div>
+        </div>
+
+        <div class="solution-panel">
+          <div class="solution-copy">
+            <ol class="solution-steps">
+              <li>
+                <span class="step-no">01</span>
+                <div>
+                  <b data-i18n="service1Title">정차 후보 구조화</b>
+                  <p data-i18n="service1Text">
+                    목적지 주변의 정차 후보를 비교 가능한 데이터로 정리합니다.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <span class="step-no">02</span>
+                <div>
+                  <b data-i18n="service2Title">후보 비교</b>
+                  <p data-i18n="service2Text">
+                    안전성·보행거리·차량 유형 적합성을 기준으로 후보를 비교합니다.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <span class="step-no">03</span>
+                <div>
+                  <b data-i18n="service3Title">추천 결과 제시</b>
+                  <p data-i18n="service3Text">
+                    종합 점수가 가장 높은 후보와 대체 후보를 함께 제시합니다.
+                  </p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="prototype-badge">Functional MVP · Prototype</div>
+          </div>
+
+          <div class="solution-visual">
+            <img
+              src="assets/solution-integrations.png"
+              alt="모바일 내비게이션 및 차량 IVI 연동 예시"
+              data-i18n-alt="integrationImageAlt"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 API -->
+      <section class="section" id="api">
+        <div class="section-head api-section-head">
+          <div class="left-group">
+            <span class="section-no">03</span>
+            <h3>API</h3>
+          </div>
+          <span class="api-label">Example · Prototype</span>
+        </div>
+
+        <div class="api-grid">
+          <div class="api-code-panel">
+            <div class="tabs" role="tablist" aria-label="API example tabs">
+              <button
+                type="button"
+                class="tab active"
+                data-tab="request-code"
+                role="tab"
+                aria-selected="true"
+                data-i18n="apiRequest"
+              >
+                REQUEST
+              </button>
+              <button
+                type="button"
+                class="tab"
+                data-tab="response-code"
+                role="tab"
+                aria-selected="false"
+                data-i18n="apiResponse"
+              >
+                RESPONSE
+              </button>
+            </div>
+
+            <pre class="code active" id="request-code"><code>POST /recommend
+{
+  "destination_id": "D001",
+  "vehicle_type": "passenger"
+}</code></pre>
+
+            <pre class="code" id="response-code"><code>{
+  "recommended_candidate_id": "C001",
+  "risk_score": 0,
+  "walking_distance_m": 18
+}</code></pre>
+          </div>
+
+          <div
+            class="api-side"
+            aria-label="API 추천 결과 예시"
+            data-i18n-aria-label="apiExampleAria"
+          >
+            <div>
+              <span>A</span>
+              <b data-i18n="apiRecommended">추천 후보</b>
+              <small>BEST MATCH</small>
+            </div>
+            <div>
+              <span>B</span>
+              <b data-i18n="apiAlternative">대체 후보</b>
+              <small>ALTERNATIVE</small>
+            </div>
+            <div>
+              <span>C</span>
+              <b data-i18n="apiAlternative">대체 후보</b>
+              <small>ALTERNATIVE</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 USE CASES -->
+      <section class="section" id="usecase">
+        <div class="section-head">
+          <div class="left-group">
+            <span class="section-no">04</span>
+            <h3 data-i18n="usecaseTitle">적용 분야</h3>
+          </div>
+        </div>
+
+        <div class="cards four use-cards">
+          <article class="card">
+            <div class="icon">01</div>
+            <h4 data-i18n="usecase1Title">내비게이션 · 지도</h4>
+            <p data-i18n="usecase1Text">
+              도착 이후 실제 정차 지점까지 이어지는 라스트 100m 정보를 제공합니다.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">02</div>
+            <h4 data-i18n="usecase2Title">차량 IVI · OEM</h4>
+            <p data-i18n="usecase2Text">
+              차량 화면에서 활용할 수 있는 정차 후보 추천 인터페이스로 확장할 수 있습니다.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">03</div>
+            <h4 data-i18n="usecase3Title">모빌리티 플랫폼</h4>
+            <p data-i18n="usecase3Text">
+              택시·호출·배달·물류 서비스의 승하차 및 픽업 지점 추천에 활용할 수 있습니다.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">04</div>
+            <h4 data-i18n="usecase4Title">시설 운영</h4>
+            <p data-i18n="usecase4Text">
+              시설 전면부의 정차 운영과 현장 판단을 지원하는 데이터 레이어로 활용할 수 있습니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact-strip" id="contact">
+        <div>
+          <div class="eyebrow contact-eyebrow">CONTACT</div>
+          <h3 data-i18n="contactTitle">사업제휴 · PoC · 데이터 협력 문의</h3>
+          <p data-i18n="contactDescription">
+            GGi-gik MVP와 정차 후보 데이터 구조에 대해 문의해주세요.
+          </p>
+        </div>
+
+        <a class="btn btn-primary contact-button" href="mailto:contact@ggigik.com">
+          contact@ggigik.com
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand footer-brand" href="#top" aria-label="GGi-gik Home">
+        <img src="assets/logo-navy.png" alt="" class="brand-logo small" />
+        <span class="brand-copy">
+          <b>GGi-gik</b>
+          <small>better stops for a smarter tomorrow</small>
+        </span>
+      </a>
+
+      <div class="footer-links">
+        <a href="#problem" data-i18n="navProblem">문제</a>
+        <a href="#service" data-i18n="navSolution">해결</a>
+        <a href="#api">API</a>
+        <a href="#usecase" data-i18n="navUsecase">적용 분야</a>
+      </div>
+
+      <a class="footer-contact" href="mailto:contact@ggigik.com">contact@ggigik.com</a>
+      <div class="copyright">© 2026 GGi-gik</div>
+    </footer>
+  </div>
+
+  <script src="assets/app.js?v=20260915-8"></script>
+</body>
+</html>
