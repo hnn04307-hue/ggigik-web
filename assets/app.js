@@ -16,9 +16,9 @@ const translations = {
 
     heroTitle:
       '<span class="hero-line">차가 잠깐 서는 자리를,</span><em class="hero-line">똑똑하게 안내합니다.</em>',
-    heroSubtitle: "정차 후보 추천 MVP",
+    heroSubtitle: "최적 정차구역 추천 MVP",
     heroDescription:
-      '끼긱은 목적지 주변의 정차 후보를 비교해<br class="desktop-break">차량 유형과 현장 조건에 맞는 추천 정차 위치를 제시하는 기능형 MVP입니다.',
+      '<span class="hero-desc-line">목적지 주변의 정차 구역을 비교해</span><span class="hero-desc-line">차량 유형과 현장 조건에 맞는 위치를 제시하는 기능형 MVP입니다.</span>',
     heroServiceButton: "서비스 알아보기",
     heroContactButton: "문의하기",
 
@@ -78,7 +78,7 @@ const translations = {
       '<span class="hero-line">Better curbside stops,</span><em class="hero-line">guided intelligently.</em>',
     heroSubtitle: "Curbside Stop Recommendation MVP",
     heroDescription:
-      'GGi-gik compares curbside stop candidates near a destination<br class="desktop-break">and presents recommended stopping locations based on vehicle type and site conditions.',
+      '<span class="hero-desc-line">GGi-gik compares curbside stop candidates</span><span class="hero-desc-line">near a destination and presents recommended stopping locations</span><span class="hero-desc-line">based on vehicle type and site conditions.</span>',
     heroServiceButton: "Explore the Service",
     heroContactButton: "Contact Us",
 
